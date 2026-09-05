@@ -1,0 +1,3 @@
+# ERROR: 5 values for a 3-element array
+@int nums[3] is {1, 2, 3, 4, 5} $
+show(nums[0]) $

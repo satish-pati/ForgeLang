@@ -1,0 +1,4 @@
+# Error: Literal (4) used as left-hand side of assignment
+
+@int x=5 $
+4= x $

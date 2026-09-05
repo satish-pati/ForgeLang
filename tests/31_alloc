@@ -1,0 +1,7 @@
+# HEAP MEMORY: alloc, write, read, release
+@ptr @int p is alloc(1, @int) $
+deref p = 42 $
+show(deref p) $
+release(p) $
+
+

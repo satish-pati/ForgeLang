@@ -1,0 +1,7 @@
+# REALLOC: resize preserves existing content
+@ptr @int rp is alloc(1, @int) $
+deref rp = 55 $
+show(deref rp) $
+rp is realloc(rp, 100) $
+show(deref rp) $
+release(rp) $

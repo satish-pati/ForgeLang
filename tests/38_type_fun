@@ -1,0 +1,13 @@
+
+func @int divide( @int a, @int b) begin
+    ret a / b$              
+end                         
+
+func @int truncate(@int i, @float f) begin
+    ret f$                  
+end                         
+
+@float x is call  divide(6,3)$
+@int y is call  truncate(8,3.2)$
+show(x)$
+show(y)$

@@ -1,0 +1,13 @@
+
+@int y=2 $
+@int x=2 $
+show(y) $
+show(x) $
+
+func @int main() {
+    @int x=5 $
+    show(x) $
+    @int y=6 $
+    show(y) $
+    ret 0 $
+}

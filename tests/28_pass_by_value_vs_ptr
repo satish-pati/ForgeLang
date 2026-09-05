@@ -1,0 +1,16 @@
+# PASS-BY-VALUE: caller's copy unchanged
+func @void addTen_val(@int x) {
+    x is x + 10 $
+}
+# PASS-BY-POINTER: caller's variable is modified
+func @void addTen_ptr(@ptr @int x) {
+    deref x is deref x + 10 $
+}
+
+@int a is 5 $
+call addTen_val(a) $
+show(a) $            # still 5
+
+@int b is 5 $
+call addTen_ptr(ref b) $
+show(b) $            # now 15

@@ -1,0 +1,27 @@
+@int arr[6] $
+@int n is 6 $
+@int i $
+@int j $
+@int key $
+
+show("Enter Array elements\n") $
+iterate (i = 0 $ i < n $ i = i + 1) {
+    input(arr[i]) $
+}
+
+
+iterate (i = 1 $ i < n $ i = i + 1) {
+    key = arr[i] $
+    j = i - 1 $
+    
+    loop (j >= 0 and arr[j] > key) {
+        arr[j + 1] = arr[j] $
+        j = j - 1 $
+    }
+    arr[j + 1] = key $
+}
+
+show("\nAfter sorting array elements\n") $
+iterate (i = 0 $ i < n $ i = i + 1) {
+    show(arr[i]) $
+}

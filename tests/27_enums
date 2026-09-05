@@ -1,0 +1,21 @@
+# ENUMERATIONS: auto-valued, explicit start, mixed
+enum { RED, GREEN, BLUE } $
+enum { MON = 1, TUE, WED, THU, FRI } $
+enum { OFF = 0, LOW = 10, HIGH = 100 } $
+
+show(RED)   $
+show(GREEN) $
+show(BLUE)  $
+show('\n') $
+
+show(MON)   $
+show(WED)   $
+show(HIGH)  $
+
+
+show("\nLoop using Enum\n") $
+@int color is GREEN $
+loop(color < BLUE) {
+    color += 1 $
+}
+show(color) $

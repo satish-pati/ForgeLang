@@ -1,0 +1,4 @@
+#  redeclaration of x in the same scope
+@int x is 5 $
+@int x is 10 $
+show(x) $

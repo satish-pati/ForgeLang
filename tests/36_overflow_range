@@ -1,0 +1,9 @@
+
+    @short s1 is 30000$   #  within range [-32768, 32767]
+    @short s2 is 32767$   #  max value
+    @short s3 is 40000$   #  overflow (should warn)
+    @short s4 is -40000$  #  underflow (should warn)
+    show(s1)$
+    show(s2)$
+    show(s3)$
+    show(s4)$

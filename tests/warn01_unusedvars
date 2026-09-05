@@ -1,0 +1,4 @@
+@int i=2 $
+@int k=5 $
+@int j= 7 $
+show(j) $

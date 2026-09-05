@@ -1,0 +1,6 @@
+# LOOP (while): runs while condition is true
+@int n is 1 $
+loop(n <= 5) {
+    n++ $
+}
+show(n) $

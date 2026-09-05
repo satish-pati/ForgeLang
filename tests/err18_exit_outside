@@ -1,0 +1,4 @@
+# ERROR: exit used at top level (not inside loop or choose)
+@int x is 5 $
+exit $
+show(x) $

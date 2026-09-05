@@ -1,0 +1,24 @@
+func @void checkPalindrome(@int original){
+@int reversed = 0 $
+@int remainder $
+@int num=original $
+loop (num > 0) {
+    remainder = num % 10 $
+    reversed = reversed * 10 + remainder $
+    num = num / 10 $
+}
+
+if (original == reversed) {
+    show("true\n") $
+} else {
+    show("false\n") $
+}
+}
+
+@int num1,num2 $
+show("Enter the number :") $
+input(num1) $
+call checkPalindrome(num1) $
+show("Enter the number :") $
+input(num2) $
+call checkPalindrome(num2) $

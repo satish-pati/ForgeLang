@@ -1,0 +1,20 @@
+# ARRAYS: 1D, 2D, 3D with element access and initialiser list
+@int arr[3] $
+arr[0] is 10 $
+arr[2] is 30 $
+show(arr[2]) $
+
+@int nums[3] is {1, 2, 3} $
+show(nums[1]) $
+
+@int mat[2][2] $
+mat[0][0] is 5 $
+mat[1][1] is 9 $
+show(mat[0][0]) $
+
+@int grid[2][2] is {1, 2, 3, 4} $
+show(grid[0][1]) $
+
+@int cube[2][2][2] $
+cube[1][1][1] is 77 $
+show(cube[1][1][1]) $

@@ -1,0 +1,5 @@
+
+
+@int val is 42 $
+@ptr @float p = ref val $
+show(deref p) $

@@ -1,0 +1,35 @@
+# for f in ../test_programs/*.txt; do echo "=== $f ==="; ./compiler "$f"; done
+@int arr[8] = {2, 5, 8, 12, 16, 23, 38, 45} $
+@int n is 8 $
+@int target $
+show("Enter Target element to find in {2, 5, 8, 12, 16, 23, 38, 45} \n") $
+input(target) $
+@int left is 0 $
+@int right is n - 1 $
+@int mid $
+@int found is 0 $
+@int position is -1 $
+
+loop (left <= right) {
+    mid = (left + right) / 2 $
+    
+    if (arr[mid] == target) {
+        found = 1 $
+        position = mid $
+        left = right + 1 $
+    } else {
+        if (arr[mid] < target) {
+            left = mid + 1 $
+        } else {
+            right = mid - 1 $
+        }
+    }
+}
+
+if (found == 1) {
+    show("\nFound at position :\n") $
+    show(position) $
+} else {
+        show("\nNot found\n") $
+    show(-1) $
+}

@@ -1,0 +1,15 @@
+# for f in ../test_features/*; do echo "=== $f ==="; ./compiler "$f"; done
+@int    i is 42       $
+@float  f is 3.14     $
+@double d is 9.99     $
+@long   l is 1000000  $
+@short  s is 200      $
+@char   c is 'A'      $
+show(i) $
+show(f) $
+show(d) $
+show(l) $
+show(s) $
+show(c) $
+fixed @float PI  is 3.14 $
+show(PI) $

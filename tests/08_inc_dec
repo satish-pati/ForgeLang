@@ -1,0 +1,7 @@
+# INCREMENT / DECREMENT: prefix and postfix, all 4 forms
+@int n is 0 $
+show(++n) $   
+show(n++) $  
+show(--n) $  
+show(n--) $   
+show(n) $           

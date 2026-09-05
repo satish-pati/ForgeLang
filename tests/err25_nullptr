@@ -1,0 +1,3 @@
+@ptr @void p $
+p=null $
+show (deref p) $

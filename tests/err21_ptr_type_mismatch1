@@ -1,0 +1,4 @@
+# ERROR: assigning a non-zero int to a pointer variable
+@int val is 42 $
+@ptr @int p is   val $
+show(p) $

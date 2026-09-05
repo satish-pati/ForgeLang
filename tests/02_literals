@@ -1,0 +1,7 @@
+@int h is hexF  $
+@int o is oct10  $
+@int b is bin1010 $
+show(h) $
+show(o) $
+show(b) $
+ 

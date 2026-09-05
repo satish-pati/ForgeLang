@@ -1,0 +1,8 @@
+# ARITHMETIC: + - * / %
+@int a is 10 $
+@int b is 3  $
+show(a + b) $
+show(a - b) $
+show(a * b) $
+show(a / b) $
+show(a % b) $

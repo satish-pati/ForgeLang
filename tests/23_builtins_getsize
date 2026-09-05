@@ -1,0 +1,10 @@
+
+# getsizeof on variable, array, multidim array
+@int   x $
+show(getsizeof(x))   $  # 4
+
+@int   arr[10] $
+show(getsizeof(arr)) $  # 40
+
+@double mat[2][2] $
+show(getsizeof(mat)) $  # 32

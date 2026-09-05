@@ -1,0 +1,3 @@
+#  constant division by zero
+@int x is 10 / 0 $
+show(x) $

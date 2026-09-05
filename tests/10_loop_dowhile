@@ -1,0 +1,7 @@
+# REPEAT...LOOP (do-while): body runs at least once
+@int x is 0 $
+repeat {
+    x is x + 1 $
+} loop(x < 4) $
+show(x) $
+

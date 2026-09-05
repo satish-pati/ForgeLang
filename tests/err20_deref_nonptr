@@ -1,0 +1,4 @@
+# ERROR: deref applied to a plain int, not a pointer
+@int x is 5 $
+@int v is deref x $
+show(v) $

@@ -1,0 +1,7 @@
+# ERROR: function expects a pointer argument, but a plain int is passed
+func @void increment(@ptr @int x) {
+    deref x is deref x + 1 $
+}
+@int val is 10 $
+call increment(val) $
+show(val) $

@@ -1,0 +1,3 @@
+@int t $
+@int k $
+input(t+k) $

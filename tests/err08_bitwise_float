@@ -1,0 +1,4 @@
+# ERROR: bitwise operator on float type
+@float a is 3.0 $
+@float b is a bitand 1.0 $
+show(b) $

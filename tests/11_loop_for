@@ -1,0 +1,9 @@
+# ITERATE (for loop): init $ cond $ incr — also nested
+@int sum is 0 $
+@int i,j$
+iterate(i is 0 $ i < 5 $ i = i + 1) {
+    sum += i $
+}
+show(sum) $
+
+

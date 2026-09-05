@@ -1,0 +1,12 @@
+ @float f is 3.14$
+@int i is f$                
+    
+    
+@int big is 100000$
+@short s is big$            
+    
+    @long huge is 9999999999$
+    @int x is huge$             
+    show(i)$
+    show(s)$
+    show(x)$

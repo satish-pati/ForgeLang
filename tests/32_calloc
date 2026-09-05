@@ -1,0 +1,8 @@
+
+
+# CALLOC: zero-initialised
+@ptr @int zp is calloc(1, @int) $
+show(deref zp) $     # 0
+deref zp = 7 $
+show(deref zp) $
+release(zp) $

@@ -1,0 +1,4 @@
+# ERROR: skip used outside any loop
+@int x is 5 $
+skip $
+show(x) $

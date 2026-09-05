@@ -1,0 +1,8 @@
+@char day[20] ="Monday" $
+@int result=0$
+choose(day) {
+    option "Monday"  : result is 10 $
+     exit $
+    def      : result is 99 $
+}
+show(result) $

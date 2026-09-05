@@ -1,0 +1,11 @@
+# SWAP BY POINTER
+func @void swap(@ptr @int a, @ptr @int b) {
+    @int temp is deref a $
+    deref a is deref b $
+    deref b is temp $
+}
+@int x is 10 $
+@int y is 20 $
+call swap(ref x, ref y) $
+show(x) $
+show(y) $

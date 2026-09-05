@@ -1,0 +1,33 @@
+# ./compiler ../test_programs/test_bb_sort
+# riscv64-linux-gnu-gcc -static -o a.out output.s 
+# qemu-riscv64 myprogram
+func @void test_bubble_sort(){
+@int arr[6] $
+@int n is 6 $
+@int i $
+@int j $
+@int temp $
+show("Enter Array elements\n") $
+
+iterate (i = 0 $ i < n $ i = i + 1) {
+    input(arr[i]) $
+}
+
+iterate (i = 0 $ i < n - 1 $ i = i + 1) {
+    iterate (j = 0 $ j < n - i - 1 $ j = j + 1) {
+        if (arr[j] > arr[j + 1]) {
+            temp = arr[j] $
+            arr[j] = arr[j + 1] $
+            arr[j + 1] = temp $
+        }
+    }
+}
+show("\nAfter sorting array elements\n") $
+iterate (i = 0 $ i < n $ i = i + 1) {
+    show(arr[i]) $
+}
+}
+func @int main(){
+    call test_bubble_sort() $
+    ret 0 $
+}

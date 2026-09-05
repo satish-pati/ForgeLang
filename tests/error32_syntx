@@ -1,0 +1,2 @@
+@int    i is 42   $    
+@float  f is 3.14   show(i) $

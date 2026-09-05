@@ -1,0 +1,5 @@
+# ERROR: non-void function has no ret statement
+func @int compute() {
+    @int x is 10 $
+     }
+show(call compute()) $

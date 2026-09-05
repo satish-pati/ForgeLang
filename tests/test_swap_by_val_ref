@@ -1,0 +1,29 @@
+func @void swapbyref(@ptr @int a, @ptr @int b) {
+    @int temp is deref a $
+    deref a is deref b $
+    deref b is temp $
+}
+
+func @void swapbyval( @int a,  @int b) {
+    @int temp is a $
+    a is  b $
+    b is temp $
+}
+
+@int x  $
+@int y  $
+
+show("Enter the number 1:") $
+input(x) $
+show("Enter the number 2:") $
+input(y) $
+
+show("After Calling Swapbyval (pass by val):") $
+call swapbyval(x,y) $
+show(x) $
+show(y) $
+
+show("After Calling Swapbyref (pass by ref) :") $
+call swapbyref(ref x, ref y) $
+show(x) $
+show(y) $

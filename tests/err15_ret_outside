@@ -1,0 +1,3 @@
+# ERROR: ret at global scope (outside any function)
+@int y is 5 $
+ret y $

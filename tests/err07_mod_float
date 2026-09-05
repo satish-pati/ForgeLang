@@ -1,0 +1,3 @@
+# ERROR: % is undefined for float operands
+@float f is 7.0 % 2.0 $
+show(f) $

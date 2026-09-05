@@ -1,0 +1,6 @@
+# ERROR: add expects 2 arguments, got 1
+func @int add(@int a, @int b) {
+    ret a + b $
+}
+@int r is call add(5) $
+show(r) $

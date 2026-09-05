@@ -1,0 +1,9 @@
+# BITWISE: bitand bitor bitxor bitnot lshift rshift
+@int x is 1 $
+@int y is 0  $
+show(x bitand y) $
+show(x bitor  y) $
+show(x bitxor y) $
+show(bitnot x)   $
+show(x lshift 2) $
+show(x rshift 1) $

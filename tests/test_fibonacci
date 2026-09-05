@@ -1,0 +1,12 @@
+func @int fib ( @int n ) {
+if ( n <= 1) {
+  ret n$
+}
+ret call fib ( n - 1) + call fib ( n - 2) $
+}
+
+@int num $
+show("Enter the number :\n") $
+input(num) $
+@int result = call fib (num) $
+show ( result ) $

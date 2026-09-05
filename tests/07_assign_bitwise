@@ -1,0 +1,11 @@
+
+# BITWISE ASSIGN: bitand= bitor= bitxor= lshift= rshift=
+
+show("\nBitwise\n") $
+@int bv is 1 $
+bv bitand= 1 $  show(bv) $
+bv bitor=  0 $  show(bv) $
+bv bitxor= bv  $  show(bv) $
+@int sv is 4 $
+sv lshift= 2 $   show(sv) $
+sv rshift= 1 $   show(sv) $

@@ -1,0 +1,13 @@
+func @void printFloat( @float x) begin
+    show(x)$
+end
+
+func @void printInt(@int x) begin
+    show(x)$
+end
+
+@int j= 42 $
+call printFloat(j)$                                            
+call printInt(2.3) $
+@int i=2 $
+call printFloat(i)$            

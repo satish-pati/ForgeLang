@@ -1,0 +1,10 @@
+# EXIT (break): leaves loop when i reaches 5
+show("\nexit in loop\n") $
+
+@int i is 0 $
+loop(i < 10) {
+    if(i == 5) { exit $ }
+    i++ $
+}
+show(i) $
+

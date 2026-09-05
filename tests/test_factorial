@@ -1,0 +1,15 @@
+
+# for f in ../test_programs/* ; do     echo "=== $f ===";     ./compiler "$f"; done
+func @int factorial ( @int n ) {
+    if (n <= 1) {
+        ret 1 $
+    }
+    ret n * call factorial(n - 1) $
+}
+
+@int num $
+show("Enter the number :\n") $
+input(num) $
+@int result is call factorial(num) $
+show(result) $
+

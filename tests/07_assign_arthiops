@@ -1,0 +1,8 @@
+# COMPOUND ASSIGN: += -= *= /= %=
+@int v is 10 $
+v += 5 $   show(v) $
+v -= 3 $   show(v) $
+v *= 2 $   show(v) $
+v /= 4 $   show(v) $
+v  = 10 $
+v %= 3 $   show(v) $

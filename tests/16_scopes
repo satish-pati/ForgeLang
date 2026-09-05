@@ -1,0 +1,15 @@
+# SCOPING: inner scope sees outer; vars shadow outer
+@int g is 100 $
+{
+    @int local1 is 10 $
+    {
+        @int local2 is 20 $
+        @int total  is g + local1 + local2 $
+        show(total) $
+    }
+    show(local1) $
+    # show(local2) $
+
+}
+show(g) $
+# show(local1) $

@@ -1,0 +1,3 @@
+# ERROR: RED declared twice in enum
+enum { RED, GREEN, RED } $
+show(RED) $

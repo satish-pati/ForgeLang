@@ -1,0 +1,5 @@
+# ERROR: void function attempts to return a value
+func @void bad() {
+    ret 42 $
+}
+call bad() $

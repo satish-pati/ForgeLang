@@ -1,0 +1,7 @@
+@ptr @int p is alloc(1, @int) $
+deref p = 42 $
+show(deref p) $
+release(p) $
+show(deref p) $ # garbage value
+
+

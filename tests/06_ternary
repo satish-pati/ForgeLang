@@ -1,0 +1,7 @@
+# TERNARY: condition ? true_val : false_val
+@int a is 3 $
+@int b is 7 $
+@int bigger  is (a > b) ? a : b $
+@int abs_val is (a > 0) ? a : -a $
+show(bigger)  $
+show(abs_val) $

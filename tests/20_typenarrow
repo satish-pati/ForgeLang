@@ -1,0 +1,8 @@
+
+show("\nType narrowing\n") $
+
+# IMPLICIT COERCION (narrowing on assignment): fractional part discarded
+
+@float k=3.99 $
+@int narrow is k $
+show(narrow) $   

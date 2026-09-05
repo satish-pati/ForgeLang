@@ -1,0 +1,22 @@
+@int arr[5] = {1, 2, 3, 4, 5} $
+@int n is 5 $
+@int i $
+@int temp $
+
+show("Enter Array elements\n") $
+iterate (i = 0 $ i < n $ i = i + 1) {
+    input(arr[i]) $
+}
+
+
+iterate (i = 0 $ i < n / 2 $ i = i + 1) {
+    temp = arr[i] $
+    arr[i] = arr[n - 1 - i] $
+    arr[n - 1 - i] = temp $
+}
+
+
+show("\nAfter reversing array elements\n") $
+iterate (i = 0 $ i < n $ i = i + 1) {
+    show(arr[i]) $
+}

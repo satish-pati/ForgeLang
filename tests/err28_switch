@@ -1,0 +1,8 @@
+@float f=2.5 $
+@int result=0$
+choose(f) {
+    option 2.5 : result is 10 $
+     exit $
+    def      : result is 99 $
+}
+show(result) $

@@ -1,0 +1,20 @@
+
+func @int help2(@int z) {
+    @int x is 0 $
+    @int y is z + 5 $
+    show(y)$       # shows z+5
+    ret y $
+}
+
+func @int help1(@int z) {
+    @int x is 0 $
+    @int y is call help2(z) $
+    ret y $
+}
+
+func @int main() {
+    @int x is 3 $
+    @int y is call help1(x) $
+    show(y)$       # expect 8
+    ret 0 $
+}

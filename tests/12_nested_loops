@@ -1,0 +1,11 @@
+show("\n Nested Loops\n") $
+
+# Nested: 3x3 = 9 total iterations
+@int i ,j $
+@int count is 0 $
+iterate(i is 0 $ i < 3 $ i = i + 1) {
+    iterate( j is 0 $ j < 3 $ j = j + 1) {
+        count += 1 $
+    }
+}
+show(count) $

@@ -1,0 +1,10 @@
+
+@char name[10] $
+name[0] is 'H' $
+name[1] is 'i' $
+show(name[0]) $
+show(name[1]) $
+
+
+@char greeting[20] is "Hello World" $
+show(greeting) $

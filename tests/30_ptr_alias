@@ -1,0 +1,9 @@
+# Two pointers to same variable — alias effect
+
+@int y is 20 $
+@ptr @int q is ref y $
+show(deref q) $
+@ptr @int r is ref y $
+deref q is 777 $
+show(deref r) $      # r also sees 777
+show(deref q) $ 

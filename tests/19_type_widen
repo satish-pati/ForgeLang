@@ -1,0 +1,10 @@
+show("\nType widening \n") $
+
+@int i=10 $
+@float wide is i $
+show(wide) $           # 10.0  
+
+
+@int j=1000 $
+@long wide2 is j $
+show(wide2) $           # 10.0  

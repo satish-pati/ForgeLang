@@ -1,0 +1,11 @@
+#  in mixed expressions, operands widen automatically
+#  @char < @short < @int < @long < @float < @double
+
+show("\nType promotion \n") $
+@char  c = 'A'  $
+@short s  = c + 10 $
+show(s) $
+@int  i =  s + 10 $  
+show(i) $
+@long l = i + c + 10 $
+show(l) $

@@ -1,0 +1,15 @@
+@float f is 3.99 $
+@int i is (@int) f $
+show(i)$
+
+@int j is 65 $
+@char ch is (@char) j $
+show(ch)$
+
+@char m='a' $
+@int n=(@int) m $
+show(n)$
+
+@long l=34556$
+@int li=(@int)l$
+show(li)$

@@ -1,0 +1,3 @@
+# ERROR: calling a function never declared
+@int r is call mystery(10) $
+show(r) $

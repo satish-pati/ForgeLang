@@ -1,0 +1,7 @@
+# BUILT-INS: abs() min() max() getsizeof()
+@int a is -7 $
+@int b is 3  $
+@int c is 10 $
+show(abs(a))       $   # 7
+show(min(a, b, c)) $   # -7
+show(max(a, b, c)) $   # 10

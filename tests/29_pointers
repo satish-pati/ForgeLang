@@ -1,0 +1,9 @@
+# POINTERS
+
+@int x is 42 $
+@ptr @int p is ref x $
+show(deref p) $      # read through pointer: 42
+
+deref p is 99 $      # write through pointer
+show(x) $            # x is now 99
+

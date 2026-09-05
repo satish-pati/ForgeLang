@@ -1,0 +1,9 @@
+# RELATIONAL, LOGICAL, IF/ELSE — one combined case
+@int age is 20 $
+@int score is 85 $
+
+if(age >= 18 and score > 80) {
+    show(1) $
+} else {
+    show(0) $
+}

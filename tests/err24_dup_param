@@ -1,0 +1,4 @@
+# ERROR: parameter x appears twice in function signature
+func @int bad(@int x, @float x) {
+    ret 0 $
+}

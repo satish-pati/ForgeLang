@@ -1,0 +1,13 @@
+# CHOOSE / OPTION / DEF (switch-case)
+@int day is 2 $
+@int result is 0 $
+choose(day) {
+    option 1 : result is 10 $
+     exit $
+    option 2 : result is 20 $ 
+    exit $
+    option 3 : result is 30 $ 
+    exit $
+    def      : result is 99 $
+}
+show(result) $

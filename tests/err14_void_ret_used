@@ -1,0 +1,5 @@
+# ERROR: using return value of a void function
+func @void log_it() {
+    show(0) $
+}
+@int x is call log_it() $

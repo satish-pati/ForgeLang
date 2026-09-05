@@ -1,0 +1,3 @@
+#  ++ on a fixed variable
+fixed @int n is 5 $
+++n $

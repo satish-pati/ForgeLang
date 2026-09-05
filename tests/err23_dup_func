@@ -1,0 +1,8 @@
+# ERROR: function add declared twice
+func @int add(@int a) {
+     ret a $ 
+     }
+func @int add(@int a, @int b) { 
+    ret a + b $ 
+    }
+show(call add(1, 2)) $
