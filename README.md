@@ -1,10 +1,6 @@
----
 
-title: Custom Language Compiler — Group 3
 
----
-
-# Custom Language Compiler — Group 3
+# ForgeLang - Custom Language Compiler 
 
 A full compiler pipeline for a custom programming language. Takes source code through lexing → parsing → semantic analysis → TAC generation → optimization → RISC-V assembly generation → native binary execution, and also transpiles to Python for immediate execution. Serves an interactive HTML visualization dashboard.
 
